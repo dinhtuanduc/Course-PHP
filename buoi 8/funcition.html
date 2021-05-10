@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>      
+        *** Phạm vi của biến
+        1 - biến toàn cục là biến có phạm vi ảnh hưởng ở tất cả mọi nơi
+        trừ bên trong hàm
+        và biến toàn cục được khai báo bên ngoài hàm
+        bên trong hàm không sử dụng được biến toàn cục
+        2 - biến cục bộ là những biến được khai báo bên trong hàm
+        tham số đầu vào của hàm cũng là biến cục bộ
+    </pre>
+    <p id="id"></p>
+    <p id="id2"></p>
+    <script>
+        //Đây là biến toàn cục - sẽ mang đc gia trị ra ngoài
+        var bien =20;
+
+    // a và b là biến cục bộ - sẽ không mang đc giá trị ra ngoài
+        function p(a,b){
+
+            var pp=((a+b)*2);
+            return pp;
+        }
+        function s(a,b){
+
+            var ss=(a*b);
+            return ss;
+        }
+        var ppp=p(4,6);
+        var sss=s(4,6);
+        document.getElementById("id") .innerText= "Ket qua "+ ppp;
+        document.getElementById("id2") .innerText= "Ket qua "+ sss;
+    </script>
+</body>
+</html>

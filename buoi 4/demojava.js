@@ -1,0 +1,1 @@
+alert("Ngày hôm nay là trung thu đó :3");

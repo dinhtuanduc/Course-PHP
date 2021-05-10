@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="demo5">
+        demo so 1
+    </div>
+    <div class="demo5">
+    demo so 2
+    </div>
+    <div class="demo5">
+        demo so 3
+    </div>
+    <p>thẻ p</p>
+
+    <button onclick="demo()">Click here</button>
+
+    <script>
+        function demo(){
+            var x = document.getElementsByClassName("demo5");
+            console.log(x);
+            x[1].innerHTML="Thay dổi nội dung";
+            x[1].style.background="green";
+            x[1].style.fonsize="20px";
+
+        }
+    </script>
+</body>
+</html>

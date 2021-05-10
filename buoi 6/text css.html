@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text
+        {
+            width: 400px;
+            height: 300px;
+            background-color: honeydew;
+            color: red;
+            padding: 30px;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+        #so1
+        {
+            text-align: left;
+        }
+        #so2
+        {
+            text-align: right;
+        }
+        #so3
+        {
+            text-align: center;
+        }
+        #so4
+        {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        text-align : Căn chỉnh văn bản
+            left right center justify
+//
+        text-decoration : trang trí văn bản
+            none ( không trang trí )
+            overline ( gạch trên )
+            line-through ( gạch ngang )
+            underline ( gạch dưới )
+//
+        text-transform: chuyển đổi văn bản
+            uppercase: chữ hoa
+            lowercase: chữ thường
+            capitalize: Viết hoa kí tự đầu
+//
+        text-indent: lùi đầu dòng văn bản
+//
+        word-spacing: Khoảng cách từ
+//
+        letter-spacing: Khoảng cách chữ cái
+//
+        line-height: Chiều cao giữa các dòng
+//
+        text-shadow: A B C; đổ bóng văn bản
+            A đổ bóng theo chiều ngang
+            B đổ bóng theo chiều dọc
+            A màu đổ bóng
+    </pre>
+
+    <div id="so1" class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+    </div>
+    <div id="so2" class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+    </div>
+    <div id="so3" class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+    </div>
+    <div id="so4" class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt, placeat autem reiciendis, eos nemo obcaecati impedit cupiditate fugit, amet nihil? Iusto itaque ut beatae soluta quam inventore iste odio!
+    </div>
+
+    <p style="text-decoration: overline;">Chữ gạch trên đầu</p>
+    <p style="text-decoration: line-through;">Chữ gạch ngang</p>
+    <p style="text-decoration: underline;">Chữ gạch dưới</p>
+
+    <p style="text-transform: uppercase;">Chuyển chữ thường thành chữ hoa</p>
+    <p style="text-transform: lowercase;">CHUYỂN CHỮ HOA THÀNH CHỮ THƯỜNG</p>
+    <p style="text-transform: capitalize;">viết hoa ký tự đầu</p>
+
+    <div style="text-indent: 30px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+    </div>
+    <div style="word-spacing: 30px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+    </div>
+    <div style="letter-spacing: 10px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+    </div>
+    <div style="line-height: 40px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ullam temporibus sint, asperiores unde repellendus accusantium, cumque itaque fugit sed blanditiis molestiae optio ad expedita et, a voluptatum fuga ab!
+    </div>
+
+    <div style="font-size: 80px; text-shadow:5px 9px red;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat expedita sequi pariatur, molestias animi qui error. Vel a laboriosam sint, at esse laborum aperiam sed magni reiciendis dolore eos veniam.
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cc p{
+            color: red;
+        }
+        .csc p{
+            color: blue;
+        }
+        div .h1 p{
+            color:gold;
+        }
+        .mainnav > li{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Cách gọi thẻ:
+        Bắt đầu từ đầu thư mục rồi đến thẻ ta muốn gọi là đc
+        Cấu trúc tên thẻ rồi cách 1 dấu cách
+        .className #idName {}
+        #idName .className {}
+        tagName .className {}
+        ví dụ
+        div .classA {}
+        dùng dấu > để gọi trực tiếp con cấp 1 của nó tránh con cấp 2,3,4,...
+    </pre>
+
+    <div id="cc">
+        <p>Thẻ p </p>
+        <p>Thẻ p </p>
+        <p>Thẻ p </p>
+    </div>
+    <div class="csc">
+        <p>Thẻ p </p>
+        <p>Thẻ p </p>
+        <p>Thẻ p </p>
+    </div>
+    <div>
+        <div class="h1">
+            <p>Thẻ p </p>
+        <p>Thẻ p </p>
+        <p>Thẻ p </p>
+        </div> 
+    </div>
+
+    <ul class="mainnav">
+        <li>
+            Xã hội
+            <ul>
+                <li>Chính trị</li>
+                <li>Giao thông</li>
+            </ul>
+        </li>
+        <li>Thể thao</li>
+    </ul>
+</body>
+</html>

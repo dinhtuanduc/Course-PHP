@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mienbac
+        {
+            background: cyan;
+            font-size: 18px;
+        }
+
+        .miennam
+        {
+            background: darkgray;
+            font-size: 18px;
+        }
+
+        .venbien
+        {
+            color: blue;
+        }
+        
+        .kvenbien
+        {
+            color:red;
+        }
+
+        #d1
+        {
+            color: black;
+        }
+        #d2
+        {
+            color: blue;
+        }
+
+        #d3 
+        {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+        <pre>
+            thuộc tính id và thuộc tính class của các thẻ html
+            ***
+            thuộc tính class được sử dụng để gom nhóm các thẻ html
+            chọn class từ html vào trong css thì dùng .className
+            vd : .mienbac {}
+    
+            =>
+            ven biển : chữ màu đỏ ( venbien )
+            không ven biển : chữ màu xám ( khongvenbien )
+        </pre>
+    <pre>
+        thuộc tính id được sử dụng định danh 1 thẻ html là duy nhất
+        vào trong css để chọn đc thẻ html theo thuộc tính id
+        dùng #id trong css
+    </pre>
+
+    <ul>
+        <li class="mienbac kvenbien">Hà Nội</li>
+        <li class="mienbac venbien">Nam Định</li>
+        <li class="mienbac venbien">Thái Bình</li>
+        <li class="mienbac kvenbien">Ninh Bình</li>
+
+        <li class="miennam kvenbien">Hồ chí Minh</li>
+        <li class="miennam venbien">Trà Vinh</li>
+        <li class="miennam venbien">Vũng Tàu</li>
+    </ul>
+
+    <div id="d1"> Thẻ số 1</div>
+    <div id="d2"> Thẻ số 2</div>
+    <div id="d3"> Thẻ số 3</div>
+</body>
+</html>

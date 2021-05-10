@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 5px solid black;
+            transition: width 3s, height 5s, background-color 4s,boder 1s;
+        }
+        .box1:hover{
+            width: 400px;
+            height: 300px;
+            background-color:red;
+            border: 5px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thẻ transition dùng để thay đổi thời gian hiển thị ra của hover
+        chú ý: thẻ này phải đặt trong thẻ mẹ
+    <div class="box1">
+        Box 1
+    </div>
+</body>
+</html>

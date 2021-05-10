@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style1
+        {
+            border-color: red;
+            border-width: 10px;
+            margin-bottom: 25px;
+        }
+        #so1
+        {
+            border-style: solid;
+        }
+        #so2
+        {
+            border-style: dashed;
+        }
+        #so3
+        {
+            border-style: dotted;
+        }
+        #so4
+        {
+            border-style: groove;
+        }
+        #so5
+        {
+            border-style: hidden;
+        }
+        #so6
+        {
+            border-top-color: blue;
+            border-bottom-width: 30px;
+            border-top-style: solid;
+            border-left-style: dashed;
+            border-right-style: dotted;
+            border-bottom-style: double;
+        }
+        #so7
+        {
+            border-width: 10px;
+            border-style: dotted;
+            border-color: red;
+            margin-bottom: 25px;
+        }
+        #viettatboder
+        {
+            border: 10px dotted red;
+        }
+
+        #so8
+        {
+            border-top-color: blue;
+            border-top-width: 5px;
+            border-top-style: solid;
+        }
+        #vietrutgon
+        {
+            border-top:5px solid blue;
+        }
+        #botron4canh
+        {
+            border: 5px solid black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        #botron4canhkhacnhau
+        {
+            border: 5px solid black;
+            border-radius: 10px 15px 20px 25px;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <pre>
+        ác thuộc tính của đường viền 
+        border-color ( màu viền )
+        border-width ( độ rộng đường viền )
+        border-style ( kiểu đường viền )
+
+        border theo các cạnh khác nhau :
+        các thuộc tính 
+        border-color , border-style , border-width dùng chung cho cả 4 cạnh 
+        của border 
+        nếu muốn border theo 4 cạnh khác nhau thì làm theo kiểu như sau :
+        border-X-color ( trong đó X là 1 trong 4 giá trị top, left , right , bottom)
+        border-X-style ( trong đó X là 1 trong 4 giá trị top, left , right , bottom)
+        border-X-width ( trong đó X là 1 trong 4 giá trị top, left , right , bottom)
+
+        Cách bo tròn Boder dùng thẻ radius: n px;
+    </pre>
+    <div id="so1" class="style1">
+        <h1>Solid</h1>
+    </div>
+
+    <div id="so2" class="style1">
+        <h1>Dashed</h1>
+    </div>
+    
+    <div id="so3" class="style1">
+        <h1>dotted</h1>
+    </div>
+
+    <div id="so4" class="style1">
+        <h1>grooce</h1>
+    </div>
+
+    <div id="so5" class="style1">
+        <h1>hidden</h1>
+    </div>
+
+    <div id="so6" class="style1">
+        <h1>Boder khác nhau</h1>
+    </div>
+    <div id="so7" class="style1">
+        <h1>Không viết rút gọn</h1>
+    </div>
+    <div id="viettatboder" class="style1">
+        <h1>Viết rút gọn</h1>
+    </div>
+
+    <p>  </p>
+    <div id="so8" class="style1">
+        <h1>Không viết rút gọn</h1>
+    </div>
+    <div id="vietrutgon" class="style1">
+        <h1>Viết rút gọn</h1>
+    </div>
+
+    <div id="botron4canh" class="style1">
+        <h1>Bo tròn 4 cạnh nè</h1>
+    </div>
+    
+    <div id="botron4canh" class="style1">
+        <h1>Bo tròn 4 cạnh khác nhau nè</h1>
+    </div>
+
+</body>
+</html>

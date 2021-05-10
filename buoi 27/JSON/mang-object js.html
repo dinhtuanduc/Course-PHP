@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <pre>
+        JSON : https://www.w3schools.com/js/js_json_intro.asp
+        JSON is a syntax for storing and exchanging data.
+        JSON là 1 cú pháp cho việc lưu trữ và trao đổi dữ liệu
+        trao đổi dữ liệu giữa máy khách và máy chủ
+        hay giữa các máy chủ với nhau
+        giữa máy chủ với app mobile
+
+        CHuyển object thành mảng - Chuyển object thành mảng:
+        - CHuyển object thành mảng: Cú pháp JSON.stringify(tên object)
+        - Chuyển mảng thành object: Cú pháp:JSON.parse(tên mảng)
+    </pre>
+    <h3 id="in1"></h3>
+    <h3 id="in2"></h3>
+    <h3 id="in3"></h3>
+    <h3 id="in4"></h3>
+    
+    <script>
+        var object = {name: "John", age: 31, city: "New York"};
+
+        // CHuyển object thành mảng: Cú pháp JSON.stringify(tên object)
+        
+        var array = JSON.stringify(object);
+        document.getElementById("in1").innerHTML = array;
+
+        //Chuyển mảng thành object: Cú pháp:JSON.parse(tên mảng)
+        var array2 = '{"name":"John","age":31,"city":"New York"}';
+        var chuyen_object = JSON.parse(array2);
+        console.log(chuyen_object)
+        document.getElementById("in2").innerHTML =chuyen_object;
+
+        //// CHuyển object thành mảng kiểu object phức tạp:
+
+        var object2 = {
+            "name":"John",
+            "age":30,
+            "cars": [
+                { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+                { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+                { "name":"Fiat", "models":[ "500", "Panda" ] }
+            ]
+        };
+        var array3 = JSON.stringify(object2);
+        document.getElementById("in3").innerHTML = array3;
+
+        //// CHuyển mảng thành object kiểu object phức tạp:
+
+        var mang = '{"name":"John","age":30,"cars":[{"name":"Ford","models":["Fiesta","Focus","Mustang"]},{"name":"BMW","models":["320","X3","X5"]},{"name":"Fiat","models":["500","Panda"]}]}';
+        var chuyen_object2 = JSON.parse(mang);
+        console.log(chuyen_object2)
+        document.getElementById("in4").innerHTML =chuyen_object2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="a">so a</label>
+            <input type="text" name="a" id="a" value="0">
+        </div>
+        <div>
+            <label for="b">so b</label>
+            <input type="text" name="b" id="b" value="0">
+        </div>
+        <div id="kq">
+            Ket qua: ?
+        </div>
+    </form>
+
+        <button id="cong">+</button>
+        <button id="tru">-</button>
+        <button id="nhan">*</button>
+        <button id="chia">/</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(function(){
+          //cong
+        $("#cong").click(function(){
+            var a= $("input#a").val();
+           var b= $("input#b").val();
+           a=parseInt(a);
+           b=parseInt(b);
+           var c= a+b;
+           $("#kq").html("Ket qua: " + c);
+        });
+        //tru
+        $("#tru").click(function(){
+            var a= $("input#a").val();
+           var b= $("input#b").val();
+           a=parseInt(a);
+           b=parseInt(b);
+           var c= a-b;
+           $("#kq").html("Ket qua: " + c);
+        });
+        //nhan
+        $("#nhan").click(function(){
+            var a= $("input#a").val();
+           var b= $("input#b").val();
+           a=parseInt(a);
+           b=parseInt(b);
+           var c= a*b;
+           $("#kq").html("Ket qua: " + c);
+        });
+        //chia
+        $("#chia").click(function(){
+            var a= $("input#a").val();
+           var b= $("input#b").val();
+           a=parseInt(a);
+           b=parseInt(b);
+           var c= a/b;
+           $("#kq").html("Ket qua: " + c);
+        });
+
+
+      });
+  </script>
+</body>
+</html>

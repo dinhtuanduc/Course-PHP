@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+
+    </pre>
+    <script>
+        //Tạo ra dối tượng thời gian trong js
+
+        //thời gian hiện tại:
+        var a=new Date();
+        console.log(a);
+
+        //Năm, tháng, ngày, giờ, phú , giây
+        var b=new Date(2000,7,19,12,30,05);
+        console.log(b);
+
+        //số Giây
+        var c=new Date(1603202608962)
+        console.log(c);
+
+        //in ra kiểu ngày ios - chuẩn quốc tế
+        var d= new Date("2004-05-18");
+        console.log(d);
+        //Lấy ra số giây lấy thời gian hiện tại trừ đi
+        console.log(d.getTime());
+        console.log(d.getDate());
+        console.log(d.getMonth());
+
+        var e=new Date();
+        e.setDate(19);
+        e.setMonth(07);
+        e.setFullYear(2000);
+        console.log(e);
+
+    </script>
+</body>
+</html>

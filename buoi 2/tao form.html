@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day la tiêu đề</title>
+</head>
+<body>
+    <pre>
+        Xây dựng form tiki
+        Thẻ form :là thẻ biểu mẫu chứa tất cả các thành phần của form 
+        Thẻ label: thẻ nhãn
+        Thẻ input: Nhập đầu vào
+            thẻ input có: type="text" là kiểu chữ // name="" là tên của input // value="" giá trị của ô input 
+            thẻ placeholder là thuộc tính gợi ý bên trong ô cho thẻ input
+            Thẻ button: Thẻ tạo nút bấm
+            Thẻ checked: Thẻ chọn trước một giá trị
+            Thẻ radio: Lựa chọn 1 giá trị cho trc
+            Thẻ submit: gửi 1 giá trị đi
+            Thẻ select: lựa chọn 1 giá trị
+            thẻ option: cx là thẻ lựa chọn, nhưng là con của thẻ select
+            Thẻ checkbox: chọn
+            Thẻ password: dùng cho mật khẩu
+        Thẻ textarea: Dùng để nhập liệu văn bản nhiều dòng trong khung
+            Có các thuộc tính:
+                cols"n"": cột 
+                rows"n": hàng
+    </pre>
+
+    <form name="form" method="post" action="">
+        <p>
+            <label for="">Họ tên</label>
+            <input type="text" name="hoten" value="" placeholder="Nhập họ tên">
+        </p>
+
+        <p>
+            <label for="">Số điện thoại</label>
+            <input type="text" name="" value="" placeholder="Nhập số điện thoại">
+            <button>Gửi mã xác nhận</button>
+        </p>
+
+        <p>
+            <label for="">Mã xác thực</label>
+            <input type="text" name="mxt" value="" placeholder="Nhập mã xác thực đã gửi">
+        </p>
+
+        <p>
+            <label for="">Email</label>
+            <input type="email" name="email" value="" placeholder="Nhâp gmail">
+        </p>
+        
+        <p>
+            <label for="">Mật khẩu</label>
+            <input type="password" name="matkhau" value="" placeholder="Mật khẩu từ 6 đến 32 kí tự">
+        </p>
+
+        <p>
+            <label for="">Giới tính</label>
+            <input type="radio" name="gioitinh" value"1" checked>Nam
+            <input type="radio" name="gioitinh" value="0"> Nữ
+        </p>
+
+        <p>
+            <label for="">Ngày sinh</label>
+            <input type="date" name="ngaysinh" value="">
+        </p>
+
+        <p>
+            <label for="">Ngày</label>
+            <select name="ngaysinh">
+                <option value="1">Ngày 1</option>
+                <option value="2">Ngày 2</option>
+                <option value="3">Ngày 3</option>
+                <option value="4">Ngày 4</option>
+                <option value="5">Ngày 5</option>
+            </select>
+
+            <label for="">Tháng</label>
+            <select name="thangsinh" id="">
+                <option value="1">Tháng 1</option>
+                <option value="2">Tháng 2</option>
+                <option value="3">Tháng 3</option>
+                <option value="4">Tháng 4</option>
+            </select>
+
+            <label for="">Năm</label>
+            <select name="namsinh" id="">
+                <option value="2020">Năm 2020</option>
+            </select>
+        </p>
+
+
+        <p>
+            <input type="checkbox" name="chon">
+            <label for="">Nhận các thông tin và chương trình khuyến mãi của Tiki qua email</label>
+        </p>
+
+        <p>
+            <input type="submit" name="Taotaikhoan" value="Tạo tài khoản">
+        </p>
+
+        <p>
+            Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo <a href="https://hotro.tiki.vn/hc/vi/articles/201971214">điều kiện sử dụng và chính sách của Tiki.</a>
+        </p>
+
+        <form name"ghichu" method "post" action="">
+            <p>
+                <label for="">Ghi chú</label>
+                <textarea name="ghichu" id="ghichu" cols="70" rows="20"></textarea>
+            </p>
+        </form>
+
+    </form>
+</body>
+</html>

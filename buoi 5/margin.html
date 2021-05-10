@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #so2
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 150px;
+            margin-bottom: 200px;
+        }
+        #rutgon
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin: 50px 150px 200px 100px;
+        }
+        #so3
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+            
+        }
+        #rutgon2
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin: 50px 100px;
+        }
+
+        #so4
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            margin-left: 100px;
+            margin-right: 100px;
+            
+        }
+        #rutgon3
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin: 50px 100px 150px;
+        }
+
+        #auto
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin: auto;
+        }
+
+        #nauto
+        {
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính margin trong css 
+        thuộc tính này được sử dụng căn lề tạo khoảng cách xung quanh
+        4 hướng trên dưới trái phải của 1 thẻ html 
+
+        => Reset css ( mọi trình duyệt có css mặc định của nó => phải reset 
+        cho các trình duyệt về chuẩn chung )
+        => * ( bộ chọn * có nghĩa là chọn tất cả thẻ html )
+
+        //
+        khi mà margin-top bằng margin-bottom 
+        đồng thời margin-left bằng margin-right 
+        thì mình có cách viết rút gọn :
+        margin: A B;
+        trong đó A là giá trị margin-top ( margin-bottom )
+        B là giá trị margin-left ( margin-right )
+
+        //
+        margin-top khác margin-bottom 
+        đồng thời margin-left bằng margin-right
+        margin: A B C;
+        trong đó A là giá trị margin-top
+        B là giá trị margin-left ( margin-right )
+        C là giá trị margin-bottom
+
+        //
+        margin: auto;
+        hay 
+        margin: 30px auto;
+        có nghĩa căn giữa 1 thẻ html theo chiều ngang
+        với điều kiện là width của thẻ html đó phải có giá trị 
+        cụ thể 
+        De can chinh giua 2 the div hay bat cu the nao - Ta co the ap dung cach nay tuong tu
+
+        //
+        quy tắc gộp margin 
+        Margin se lấy margin lớn hơn làm giá trị
+    </pre>
+
+    <div id="so2" class="cc">
+        margin khoảng cách từng hướng
+     </div>
+     <div id="rutgon" class="cc">
+        viet rút gọn margin khoảng cách từng hướng 
+     </div>
+
+     <div id="so3" class="cc">
+        margin khoảng cách từng hướng 222
+     </div>
+     <div id="rutgon2" class="cc">
+        viet rút gọn margin khoảng cách từng hướng 222
+     </div>
+
+     <div id="so4" class="cc">
+        margin khoảng cách từng hướng 333
+     </div>
+     <div id="rutgon3" class="cc">
+        viet rút gọn margin khoảng cách từng hướng  333
+    </div>
+
+     <div id="auto" class="cc">
+        viet rút gọn margin khoảng cách từng hướng  444
+    </div>
+
+    <div id="nauto" class="cc">
+        viet rút gọn margin khoảng cách từng hướng 555
+    </div>
+
+
+
+</body>
+</html>

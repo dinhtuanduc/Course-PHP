@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="tag1">
+
+    </ul>
+    <script>
+        // //cách 1
+        // var n=["Hà nội","HCM","Huế"];
+
+        // cách 2
+        var n=new Array("Hà nội","HCM","Huế");
+        m="";
+        for(var i =0; i<n.length;i++)
+        {
+            var a=n[i];
+            m+="<li>"+n[i]+"</li>";
+ 
+        }
+        console.log(m);
+        document.getElementById("tag1").innerHTML=m;
+
+        //Kiểm tra biến có phải mảng hay k
+        //cách 1:
+        if(Array.isArray(n))
+        {
+            console.log("Đay là 1 mảng");
+        }
+
+        //cách 2:
+        if(n instanceof Array){
+            console.log("Đay là 1 mảng");
+        }
+
+    </script>
+</body>
+</html>
